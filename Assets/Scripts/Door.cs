@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 public class Door : MonoBehaviour
 {
     private Animator animator;
@@ -14,7 +15,6 @@ public class Door : MonoBehaviour
     }
     public void Activate()
     {
-        Debug.Log("activate door");
         isOpen = !isOpen;
         animator.SetBool("Open", isOpen);
         boxCollider2D.enabled = !boxCollider2D.enabled;

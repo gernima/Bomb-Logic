@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
 public class Lever : MonoBehaviour
 {
     private Animator animator;
@@ -39,11 +40,7 @@ public class Lever : MonoBehaviour
             spriteRenderer.sprite = rightSprite;
         }
         activated = !activated;
-        if (activated)
-        {
-            Debug.Log("activate lever");
-            activatingObject.SendMessage("Activate", null, SendMessageOptions.DontRequireReceiver);
-        }
+        activatingObject.SendMessage("Activate", SendMessageOptions.DontRequireReceiver);
         yield return null;
         
     }

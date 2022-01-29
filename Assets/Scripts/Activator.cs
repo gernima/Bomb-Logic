@@ -9,7 +9,7 @@ public class Activator : MonoBehaviour
     public Sprite activatedSprite;
     public string _tag;
     public bool activated = false;
-
+    
     private SpriteRenderer spriteRenderer;
 
     private void Awake()

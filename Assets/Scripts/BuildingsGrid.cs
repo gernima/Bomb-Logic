@@ -62,7 +62,8 @@ public class BuildingsGrid : MonoBehaviour
         }
 
         flyingBuilding = Instantiate(buildingPrefab);
-        //flyingBuilding.transform.position = new Vector3(0, 0, 0);
+
+        flyingBuilding.transform.position = Camera.main.ScreenToWorldPoint(new Vector2(Screen.width / 2, Screen.height / 2)); 
         flyingBuilding.isPlaced = false;
     }
 
