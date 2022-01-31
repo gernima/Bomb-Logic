@@ -659,6 +659,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8572105550380704049, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572105550380704049, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1908842313}
+    - target: {fileID: 8572105550380704049, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572105550692317103, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1908842313}
+    - target: {fileID: 8572105550692317103, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572105550901757582, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1908842313}
+    - target: {fileID: 8572105550901757582, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8572105550901757582, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e1fde150a26196e28994ffc5acea5f1, type: 3}
 --- !u!1 &425801850 stripped
@@ -2802,6 +2834,7 @@ MonoBehaviour:
   neededActivators: 1
   levelCompletedPanel: {fileID: 425801850}
   levelFailedPanel: {fileID: 107140232}
+  timeStop: 1
 --- !u!1 &1941968455
 GameObject:
   m_ObjectHideFlags: 0
